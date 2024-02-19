@@ -2,17 +2,20 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Ticketing Webpage</title>
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Fonts link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <!-- Google fonts style -->
     <style>
@@ -20,11 +23,15 @@
             font-family: "Raleway", sans-serif;
             font-style: normal;
         }
+
+        .roboto {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+        }
     </style>
 </head>
 
 <body class="raleway mx-20 mt-5">
-
     <header class="">
         <!-------------------- Navbar section --------------------->
         <div class="navbar bg-base-100 mb-10">
@@ -42,7 +49,7 @@
             <div class="navbar-end">
                 <a class="btn border-green-500 bg-green-100 px-6">
                     <p class="font-bold text-green-500 text-xl">Bus</p>
-                    <img src="./assets/images/bus-icon.png" alt="">
+                    <img src="./assets/images/bus-icon.png" alt="" />
                 </a>
             </div>
         </div>
@@ -50,15 +57,17 @@
         <div class="text-center flex-col mb-20 justify-center items-center w-full h-screen rounded-3xl bg-no-repeat bg-center bg-cover"
             style="background-image: url(./assets/images/banner.png)">
             <div class="">
-                <h3 class="text-white text-6xl font-extrabold mb-5">End-to-End Travel with</h3>
-                <h1 class="text-lime-600 text-6xl font-extrabold mb-8">P Paribahan</h1>
+                <h3 class="text-white text-6xl font-extrabold mb-5">
+                    End-to-End Travel with
+                </h3>
+                <h1 class="text-lime-600 text-6xl font-extrabold mb-8">
+                    P Paribahan
+                </h1>
                 <div class="flex justify-center">
-                    <p class="text-white text-lg max-w-2xl mb-5">Yes, you can run unit tests and view the results
-                        directly within
-                        the
-                        app.
-                        The integrated testing features
-                        allow for a streamlined.</p>
+                    <p class="text-white text-lg max-w-2xl mb-5">
+                        Yes, you can run unit tests and view the results directly within
+                        the app. The integrated testing features allow for a streamlined.
+                    </p>
                 </div>
                 <div class="">
                     <a class="btn bg-lime-500 px-6 py-8 flex-col justify-center rounded-xl">
@@ -71,15 +80,13 @@
 
     <!---------------------- Bus detail and ticket price ---------------------->
     <article class="mb-20">
-        <h1 class="flex justify-center text-lime-600 text-5xl font-extrabold mb-8">P Paribahan</h1>
+        <h1 class="flex justify-center text-lime-600 text-5xl font-extrabold mb-8">
+            P Paribahan
+        </h1>
         <div class="flex justify-center">
-            <p class="text-black text-lg max-w-2xl mb-5 text-center">Yes, you can run unit tests and view the results
-                directly
-                within
-                the
-                app.
-                The integrated testing features
-                allow for a streamlined.
+            <p class="text-black text-lg max-w-2xl mb-5 text-center">
+                Yes, you can run unit tests and view the results directly within the
+                app. The integrated testing features allow for a streamlined.
             </p>
         </div>
         <!------------------- Ticket details section body ------------------->
@@ -88,15 +95,18 @@
                 <!--------------- Greenline Paribahan section ---------------->
                 <section class="flex justify-between mb-10">
                     <div class="flex gap-4 items-center">
-                        <img src="./assets/images/bus-logo.png" class="h-14">
+                        <img src="./assets/images/bus-logo.png" class="h-14" />
                         <div class="flex-col">
                             <h1 class="text-4xl font-bold mb-2">Greenline Paribahan</h1>
-                            <p class="text-gray-500 font-medium">Coach-009-WEB ! AC_Business</p>
+                            <p class="text-gray-500 font-medium">
+                                Coach-009-WEB ! AC_Business
+                            </p>
                         </div>
                     </div>
                     <h3 class="bg-green-200 px-6 flex gap-5 w-56 items-center max-h-14 rounded-xl">
-                        <img src="./assets/images/seat-green.png" alt="">
-                        <p class="text-green-500 text-xl font-semibold py-5"><span id="remaining-seat-count">40</span>
+                        <img src="./assets/images/seat-green.png" alt="" />
+                        <p class="text-green-500 text-xl font-semibold py-5">
+                            <span id="remaining-seat-count">40</span>
                             Seats Left
                         </p>
                     </h3>
@@ -118,30 +128,359 @@
                     <div class="border-t-2 border-gray-300 border-dashed mb-5"></div>
 
                     <div class="flex justify-between">
-
-                        <div class="p-5 font-bold bg-gray-200 rounded-xl">Boarding Point - Laxmipur</div>
-                        <div class="p-5 font-bold bg-gray-200 rounded-xl">Droping Point - Bogra</div>
-                        <div class="p-5 font-bold bg-gray-200 rounded-xl">Est. time - 11 Hour</div>
+                        <div class="p-5 font-bold bg-gray-200 rounded-xl">
+                            Boarding Point - Laxmipur
+                        </div>
+                        <div class="p-5 font-bold bg-gray-200 rounded-xl">
+                            Droping Point - Bogra
+                        </div>
+                        <div class="p-5 font-bold bg-gray-200 rounded-xl">
+                            Est. time - 11 Hour
+                        </div>
                     </div>
                 </section>
-
             </section>
             <!-- vertical dashed line -->
             <div class="border-green-500 border-l-2 border-dashed col-span-1"></div>
             <section class="col-span-2 mr-10">
                 <div class="flex justify-center">
-                    <img src="./assets/images/fare.png" class="mb-5">
+                    <img src="./assets/images/fare.png" class="mb-5" />
                 </div>
-                <h1 class="text-black text-4xl font-bold mb-3 text-center">550 Taka</h1>
-                <h3 class="text-gray-500 text-3xl font-medium text-center">Per Seat</h3>
+                <h1 class="text-black text-4xl font-bold mb-3 text-center">
+                    550 Taka
+                </h1>
+                <h3 class="text-gray-500 text-3xl font-medium text-center">
+                    Per Seat
+                </h3>
             </section>
         </div>
     </article>
 
-    <main>
+    <main class="grid grid-cols-12 gap-x-5">
+        <!----------------------- Ticket booking section ------------------------->
+        <!-------------- Select your seat section ---------------->
+        <div class="col-span-7">
+            <h1 class="text-2xl font-bold text-black mb-5">Select Your Seat</h1>
+            <div class="border-t-2 border-gray-300 border-dashed mb-5"></div>
+            <div class="flex justify-between mb-5">
+                <div class="flex">
+                    <img src="./assets/images/seat-gray.png" alt="" />
+                    <h3 class="ml-2 text-xl text-gray-500 font-semibold">Available</h3>
+                </div>
+                <div class="flex">
+                    <img src="./assets/images/seat-green.png" alt="" />
+                    <h3 class="ml-2 text-xl text-green-500 font-semibold">Selected</h3>
+                </div>
+            </div>
 
+            <div class="border-t-2 border-gray-300 border-dashed mb-5"></div>
+            <div class="grid grid-cols-12 mb-3">
+                <div class="col-span-10"></div>
+                <img src="./assets/images/stearing.jpg" class="h-16" />
+            </div>
+            <!--------------- seat layout ---------------->
+            <div class="grid grid-cols-3">
+                <!-- seat row index -->
+                <div class="roboto font-medium text-lg text-gray-500">
+                    <h4 class="px-8 py-4">A</h4>
+                    <h4 class="px-8 py-4">B</h4>
+                    <h4 class="px-8 py-4">C</h4>
+                    <h4 class="px-8 py-4">D</h4>
+                    <h4 class="px-8 py-4">E</h4>
+                    <h4 class="px-8 py-4">F</h4>
+                    <h4 class="px-8 py-4">G</h4>
+                    <h4 class="px-8 py-4">H</h4>
+                    <h4 class="px-8 py-4">I</h4>
+                    <h4 class="px-8 py-4">J</h4>
+                </div>
+                <!------------ left side seat layout -------------->
+                <div class="roboto font-medium text-lg text-gray-500">
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            A1
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            A2
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            B1
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            B2
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            C1
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            C2
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            D1
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            D2
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            E1
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            E2
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            F1
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            F2
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            G1
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            G2
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            H1
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            H2
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            I1
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            I2
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            J1
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            J2
+                        </button>
+                    </div>
+                </div>
+                <!------------ right side seat layout -------------->
+                <div class="roboto font-medium text-lg text-gray-500">
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            A3
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            A4
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            B3
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            B4
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            C3
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            C4
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            D3
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            D4
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            E3
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            E4
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            F3
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            F4
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            G3
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            G4
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            H3
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            H4
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            I3
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            I4
+                        </button>
+                    </div>
+                    <div class="flex gap-x-2 mb-3 gap-x-5">
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            J3
+                        </button>
+                        <button
+                            class="btn btn-outline border-none text-lg justify-center text-center px-10 py-5 bg-gray-100 rounded-lg hover:bg-green-500">
+                            J4
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- vertical dashed line -->
+        <!-- <div class="border-l-2 border-gray-500 border-dashed"></div> -->
+        <!----------------------- Ticket billing and confirmation section ------------------------>
+        <div class="col-span-4 ml-0">
+            <h3 class="text-2xl font-bold text-black mb-5">Select Your Seat</h3>
+            <div class="border-t-2 border-gray-300 border-dashed mb-5"></div>
+            <!----------------- billing section -------------------->
+            <section class="roboto mx-5">
+                <div class="grid grid-cols-3 mb-5">
+                    <h3 class="text-md text-lg font-semibold">
+                        Seat <span id="booked-seat-count" class="text-white px-2 py-0 bg-green-500 rounded-lg"> 2
+                        </span>
+                    </h3>
+                    <h3 class="text-md text-lg font-semibold">Class</h3>
+                    <h3 class="text-md text-lg font-semibold">Price</h3>
+                </div>
+                <div class="border-t-2 border-gray-300 border-dashed mb-5"></div>
+                <div class="grid grid-cols-3">
+                    <p>C2</p>
+                    <p>Economy</p>
+                    <p>550</p>
+                </div>
+                <div class="grid grid-cols-3">
+                    <p>C2</p>
+                    <p>Economy</p>
+                    <p>550</p>
+                </div>
+
+                <div class="border-t-2 border-gray-300 border-solid mt-3 mb-5"></div>
+                <!-- total amount of bill -->
+                <div class="grid grid-cols-3">
+                    <p class="col-span-2">Total Price</p>
+                    <p>BDT 1100</p>
+                </div>
+
+                <!-- Coupon input -->
+                <div class="flex gap-x-2">
+                    <input type="text" id="coupon-box"
+                        class="w-full h-[50px] rounded-lg border-gray-100 border-solid border-2 mt-5" name=""
+                        placeholder="    Have any coupon?">
+                    <button id="coupon-apply-btn"
+                        class="text-white px-6 h-[50px] bg-green-500 rounded-xl  mt-5">Apply</button>
+                </div>
+
+                <!-- Grand Total -->
+                <div class="grid grid-cols-3 mt-5 text-xl font-medium">
+                    <p class="col-span-2">Grand Total</p>
+                    <p>BDT 1100</p>
+                </div>
+            </section>
+
+            <!----------------- Passengers info section ---------------->
+            <section class="mt-10">
+                <div class="flex flex-col">
+                    <label for="pname" class=" text-lg font-semibold mb-1">Passenger Name*</label>
+                    <input type="text" id="passenger-name"
+                        class="w-full h-[50px] rounded-lg border-gray-100 border-solid border-2" name="pname"
+                        placeholder="    Enter your name">
+                </div>
+                <div class="flex flex-col">
+                    <label for="phone-no" class=" text-lg font-semibold mt-3 mb-1">Phone Number*</label>
+                    <input type="text" id="phone-no"
+                        class="w-full h-[50px] rounded-lg border-gray-100 border-solid border-2" name="phone-no"
+                        placeholder="    Enter your phone number">
+                </div>
+                <div class="flex flex-col">
+                    <label for="email-id" class=" text-lg font-semibold mt-3 mb-1">Email ID</label>
+                    <input type="text" id="passenger-name"
+                        class="w-full h-[50px] rounded-lg border-gray-100 border-solid border-2" name="email-id"
+                        placeholder="    Enter your email id">
+                </div>
+                <button class="bg-green-500 text-white text-xl font-semibold py-5 rounded-xl w-full mt-5">Next</button>
+            </section>
+            <div class="text-lg text-gray-400 font-light underline mt-5 flex justify-between">
+                <a href="">Terms and Conditions</a>
+                <a href="">Cancellation Policy</a>
+            </div>
+        </div>
+        <!-- ticket billing ends -->
     </main>
-
 </body>
 
 </html>
