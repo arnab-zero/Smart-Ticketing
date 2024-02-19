@@ -56,9 +56,9 @@
                 </div>
             </div>
             <!-------------------- Heading Image Section --------------------->
-            <div class="text-center flex-col mb-20 justify-center items-center w-full h-screen rounded-3xl bg-no-repeat bg-center bg-cover"
+            <div class="text-center flex mb-20 justify-center items-center w-full h-screen rounded-3xl bg-no-repeat bg-center bg-cover"
                 style="background-image: url(./assets/images/banner.png)">
-                <div class="">
+                <div class="h">
                     <h3 class="text-white text-6xl font-extrabold mb-5">
                         End-to-End Travel with
                     </h3>
@@ -80,10 +80,39 @@
             </div>
         </header>
 
+        <!-------------------- coupon offer section ---------------------->
+        <section class="raleway mb-20">
+            <h1 class="text-4xl font-bold mb-5 text-center">Best offers for you</h1>
+            <div class="flex gap-x-10 justify-center">
+                <div class="flex justify-around items-center gap-x-20 bg-yellow-500 p-10 rounded-xl w-1/2 h-[250px]">
+                    <div>
+                        <h1 class="text-4xl font-extrabold mb-2">15% OFF</h1>
+                        <p class="text-lg font-bold mb-3">On your next purchase</p>
+                        <p class="text-lg">use by January 30, 2024</p>
+                    </div>
+                    <div class="flex-col h-auto justify-center items-center">
+                        <h1 class="text-3xl font-semibold mb-3 text-center">NEW15</h1>
+                        <p class="text-lg text-center">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex justify-around items-center flex gap-x-20 bg-red-300 p-10 rounded-xl w-1/2">
+                    <div>
+                        <h1 class="text-4xl font-extrabold mb-2">10% OFF</h1>
+                        <p class="text-lg font-bold mb-3">On your next purchase</p>
+                        <p class="text-lg">use by February 14, 2024</p>
+                    </div>
+                    <div class="flex-col h-auto justify-center items-center">
+                        <h1 class="text-3xl font-semibold mb-3 text-center">Couple20</h1>
+                        <p class="text-lg text-center">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!---------------------- Bus detail and ticket price ---------------------->
         <article id="buy-ticket-section" class="mb-20">
             <h1 class="flex justify-center text-lime-600 text-5xl font-extrabold mb-8">
-                P Paribahan
+                P.H Paribahan
             </h1>
             <div class="flex justify-center">
                 <p class="text-black text-lg max-w-2xl mb-5 text-center">
@@ -158,7 +187,7 @@
             </div>
         </article>
 
-        <main class="grid grid-cols-12 gap-x-8">
+        <main class="grid grid-cols-12 gap-x-8 mb-24">
             <!----------------------- Ticket booking section ------------------------->
             <!-------------- Select your seat section ---------------->
             <div class="col-span-7">
@@ -484,6 +513,38 @@
         </main>
     </section>
 
+
+
+    <!------------------ footer section ------------------>
+    <footer class="bg-black text-gray-300 px-10">
+        <section class="flex justify-between mb-10 mt-20">
+            <div class="roboto">
+                <h1 class="text-4xl font-extrabold mb-5">P-Ticket</h1>
+                <p>P-Ticket is a digital platform to make your daily commuting better.</p>
+            </div>
+            <div>
+                <p class="raleway mb-2 text-xl font-semibold">Download our app</p>
+                <div class="flex gap-x-5 border-gray-300 border-2 border-solid p-3 rounded-xl">
+                    <img src="./assets/images/playstore.png" alt="">
+                    <div>
+                        <p>GET IT ON</p>
+                        <p>Google Play</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="border-t-2 border-gray-300 border-dashed mb-5"></div>
+        <div class="flex justify-between mb-20">
+            <p>@all rights reserved, P-Ticket Services Limited. 2024</p>
+            <div class="flex justify-between gap-x-5">
+                <a href="">Terms & Condition</a>
+                <a href="">Return & Refund Policy</a>
+                <a href="">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="border-solid border-t-2 border-black"></div>
+    </footer>
+
     <section id="next-page" class="hidden roboto flex justify-center items-center h-screen">
         <div class="bg-white  border-solid border-gray-100 border-2 mx-48 p-10 rounded-xl shadow-gray-200 shadow-md">
             <div class="flex justify-center">
@@ -495,7 +556,8 @@
                 you.</p>
             <p class="text-xl font-light text-center mb-5">Shortly you will find a confirmation in your email.</p>
             <div class="flex justify-center">
-                <button id="continue-btn" class="text-xl text-white bg-green-600 px-20 py-3 rounded-full">Continue</button>
+                <button id="continue-btn"
+                    class="text-xl text-white bg-green-600 px-20 py-3 rounded-full">Continue</button>
             </div>
         </div>
     </section>
