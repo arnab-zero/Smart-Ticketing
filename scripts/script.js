@@ -69,9 +69,11 @@ couponApplyBtn.addEventListener('click', function () {
 
 // next button click handling
 nextButton.addEventListener('click', function () {
-    var firstPage = document.getElementById('first-page');
+    const firstPage = document.getElementById('first-page');
+    const firstPageFooter = document.getElementById('first-page-footer');
     var nextPage = document.getElementById('next-page');
     firstPage.classList.add('hidden');
+    firstPageFooter.classList.add('hidden');
     nextPage.classList.remove('hidden');
 })
 
