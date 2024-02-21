@@ -8,6 +8,9 @@ const buyTicketSection = document.getElementById("buy-ticket-section");
 const couponBox = document.getElementById("coupon-box");
 const couponApplyBtn = document.getElementById("coupon-apply-btn");
 const continueButton = document.getElementById("continue-btn");
+const firstPage = document.getElementById('first-page');
+const firstPageFooter = document.getElementById('first-page-footer');
+const nextPage = document.getElementById('next-page');
 
 // variables
 let seatCount = 0;
@@ -130,4 +133,45 @@ function addDiscountStatement(discount, couponName) {
     couponDiv.appendChild(newDiv);
 }
 
+// Event handler fon apply-coupon-btn
+function handleApplyCouponButtonClick() {
+    if (couponBox.value === 'NEW15') {
+        updateGrandTotal(seatCount * 550 - seatCount * 550 * 0.15);
+        //couponFeedback.innerText = 'Discount by coupon "NEW15": TK ' +  (seatCount*550*0.15).toString
+        couponApplyBtn.disabled = true;
+        updateCouponDiv(seatCount * 550 * 0.15, 'NEW15');
+    }
+    else if (couponBox.value === 'Couple20') {
+        updateGrandTotal(seatCount * 550 - seatCount * 550 * 0.2);
+        //couponFeedback.innerText = 'Discount by coupon "Couple20": TK ' +  (seatCount*550*0.2).toString;
+        couponApplyBtn.disabled = true;
+        updateCouponDiv(seatCount * 550 * 0.2, 'Couple20');
+    }
+    else {
+        var couponFeedback = document.getElementById('coupon-feedback');
+        couponFeedback.innerText = 'The keyword you entered is not a valid coupon code!';
+    }
+}
+
+// Event handler fon next-btn
+function handleNextButtonClick() {
+    if (phoneNumber.value === '') {
+        alert('Enter phone number to confirm tickets!')
+    }
+    if (seatCount === 0) {
+        alert('Select a seat to continue booking.')
+    }
+    if (phoneNumber.value !== '' && seatCount !== 0) {
+        firstPage.classList.add('hidden');
+        firstPageFooter.classList.add('hidden');
+        nextPage.classList.remove('hidden');
+    }
+}
+
+// Event handler for continue button
+function handleContinueButtonClick() {
+    firstPage.classList.remove('hidden');
+    firstPageFooter.classList.remove('hidden');
+    nextPage.classList.add('hidden');
+}
 
