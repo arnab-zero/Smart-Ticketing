@@ -8,18 +8,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-phoneNumber.addEventListener('keyup', function handleEvent() {
-    // toggle the next button
-    if (phoneNumber.value !== null && seatCount !== 0) {
-        toggleNext();
-    }
-    else if (phoneNumber.value === null) {
-        toggleNext();
-    }
-})
+// phoneNumber.addEventListener('keyup', function handleEvent() {
+//     // toggle the next button
+//     if (phoneNumber.value !== null && seatCount !== 0) {
+//         toggleNext();
+//     }
+//     else if (phoneNumber.value === null) {
+//         toggleNext();
+//     }
+// })
 
 
-
+// change seat color and other counts related to seat if selected
 function handleSeatButtonClick(event) {
     let seatButton = event.target;
     // booking a seat
@@ -72,8 +72,15 @@ nextButton.addEventListener('click', function () {
     const firstPage = document.getElementById('first-page');
     const firstPageFooter = document.getElementById('first-page-footer');
     var nextPage = document.getElementById('next-page');
-    firstPage.classList.add('hidden');
-    firstPageFooter.classList.add('hidden');
-    nextPage.classList.remove('hidden');
+    if (phoneNumber.value === '') {
+        alert('Enter phone number to confirm tickets!')
+    }
+    if(seatCount === 0){
+        alert('Select a seat to continue booking.')
+    }
+    if (phoneNumber.value !== '' && seatCount !== 0) {
+        firstPage.classList.add('hidden');
+        firstPageFooter.classList.add('hidden');
+        nextPage.classList.remove('hidden');
+    }
 })
-
