@@ -55,11 +55,17 @@ function addSeatToList(seatName) {
         <h3>${seatName}</h3>
         <h3>Economic</h3>
         <h3>550</h3>
-    `
+    `;
     newElement.innerHTML = newElementInnerContent;
     const addBillSection = document.getElementById('add-bill-section');
     addBillSection.appendChild(newElement);
     // console.log(newElement)
 }
 
+// function to remove seat from list
+function removeSeatFromList(seatName) {
+    const removeElement = document.getElementById(seatName);
+    const parentElement = removeElement.parentNode;
+    parentElement.removeChild(removeElement);
+}
 

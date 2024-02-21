@@ -35,7 +35,7 @@ function handleSeatButtonClick(event) {
         seatButton.classList.remove('bg-green-500', 'text-white');
         seatButton.classList.add('bg-gray-100', 'text-black');
         seatCount = seatCount - 1;
-        //removeSeatFromList(seatName);
+        removeSeatFromList(seatName);
     }
     // toggle the next button
     if (phoneNumber.value !== null && seatCount !== 0) {
