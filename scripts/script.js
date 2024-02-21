@@ -22,17 +22,20 @@ document.addEventListener("DOMContentLoaded", function () {
 // change seat color and other counts related to seat if selected
 function handleSeatButtonClick(event) {
     let seatButton = event.target;
+    const seatName = seatButton.innerText;
     // booking a seat
     if (seatButton.classList.contains('bg-gray-100') && seatCount < 4) {
         seatButton.classList.remove('bg-gray-100', 'text-black');
         seatButton.classList.add('bg-green-500', 'text-white');
         seatCount = seatCount + 1;
+        addSeatToList(seatName);
     }
     // releasing a seat
     else if (seatButton.classList.contains('bg-green-500')) {
         seatButton.classList.remove('bg-green-500', 'text-white');
         seatButton.classList.add('bg-gray-100', 'text-black');
         seatCount = seatCount - 1;
+        //removeSeatFromList(seatName);
     }
     // toggle the next button
     if (phoneNumber.value !== null && seatCount !== 0) {
