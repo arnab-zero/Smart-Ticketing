@@ -141,11 +141,11 @@ function handleApplyCouponButtonClick() {
         couponApplyBtn.disabled = true;
         updateCouponDiv(seatCount * 550 * 0.15, 'NEW15');
     }
-    else if (couponBox.value === 'Couple20') {
+    else if (couponBox.value === 'Couple 20') {
         updateGrandTotal(seatCount * 550 - seatCount * 550 * 0.2);
-        //couponFeedback.innerText = 'Discount by coupon "Couple20": TK ' +  (seatCount*550*0.2).toString;
+        //couponFeedback.innerText = 'Discount by coupon "Couple 20": TK ' +  (seatCount*550*0.2).toString;
         couponApplyBtn.disabled = true;
-        updateCouponDiv(seatCount * 550 * 0.2, 'Couple20');
+        updateCouponDiv(seatCount * 550 * 0.2, 'Couple 20');
     }
     else {
         var couponFeedback = document.getElementById('coupon-feedback');
